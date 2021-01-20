@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "GamaStore"
+  "defaultProject": "GamaStore",
+  "cli": {
+    "analytics": "2df9709f-4de9-4df9-a14e-63c6f0078168"
+  }
 }
