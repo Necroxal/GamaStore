@@ -2,12 +2,30 @@
 {{title}}
 
 <!--ngIf-->
-<div *ngIf="title !== 'German'">
-  Este es un div
+<div *ngIf="title === 'German'">
+  Este es un germi
 </div>
 
+<div *ngIf="title === 'Rosa'">
+  Este es julian rosas
+</div>
+
+<div *ngIf="title === 'Camilo'">
+  Este es un Camilo
+</div>
+
+<div [ngSwitch] = "title">
+  <p *ngSwitchCase="'German'">Este es German</p>
+  <p *ngSwitchCase="'Rosa'">Esta es Rosa</p>
+  <p *ngSwitchCase="'Camilo'">Este es Camilo</p>
+  <p *ngSwitchDefault>No hay emparejamiento
+    
+  </p>
+</div>
+
+
 <button (click)="addItem()">
-Add item
+  Add item
 </button>
 
 <!--for index(posicion de los elemntos del array)-->
