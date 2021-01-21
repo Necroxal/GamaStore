@@ -1,6 +1,23 @@
 <input type="text" [(ngModel)]="title">
 {{title}}
 
+<!--ngIf-->
 <div *ngIf="title !== 'German'">
   Este es un div
 </div>
+
+<button (click)="addItem()">
+Add item
+</button>
+
+<!--for index(posicion de los elemntos del array)-->
+<ul>
+  <li *ngIf="item.length===0">
+    La lista esta vacía
+  </li>
+  <li *ngFor="let name of item; index as i">
+    {{name}} {{i}}
+    <!--Implemnatcion del delete por index al dar click-->
+    <button (click)="deleteItem(i)">delete</button>
+  </li>
+</ul>
