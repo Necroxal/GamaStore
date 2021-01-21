@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GamaStore';
+  item = ['German', 'Andrea', 'Rosa']
+
+  addItem(){
+    this.item.push('nuevo item');
+  }
+  deleteItem(index: number){
+    this.item.splice(index,1);
+  }
 }
