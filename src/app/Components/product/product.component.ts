@@ -1,5 +1,5 @@
-import { Component, OnInit , Input} from '@angular/core';
-import {Product} from '../../product.model'
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Product } from '../../product.model'
 
 @Component({
   selector: 'app-product',
@@ -11,9 +11,14 @@ export class ProductComponent implements OnInit {
   //una comporbacion estrica de todas las propiedades 
   //Otra solcuión en ir a la configuracion de ts 
   //El ! quiere decir que el valo se le asiganrá en tiempo de ejecución
- @Input() product: Product;
-  
-  constructor() { }
+  @Input() product: Product;
+  @Output() productClicked: EventEmitter<any> = new EventEmitter();
+
+
+  addCart(){
+    console.log('Añadir al carrito');
+    this.productClicked.emit(this.product.id);
+  }
 
   ngOnInit(): void {
   }
