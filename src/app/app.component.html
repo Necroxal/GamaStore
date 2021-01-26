@@ -42,5 +42,6 @@
   </li>
 </ul>
 <div *ngFor="let product of products">
-  <app-product [product]= "product"></app-product>
+  <!--$event es un evento que sirve para emitir el valor que nos va a emitir automaticamente del evenEmiiter-->
+  <app-product (productClicked) = "clickProduct($event)" [product]= "product"></app-product>
 </div>
