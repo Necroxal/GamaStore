@@ -15,7 +15,7 @@ export class AppComponent {
       image: 'assets/image/Producto1.png',
       title: 'Playera',
       price: 400,
-      description: 'Playera de Platzi para disfrutar los cursos'
+      description: 'Dados para juego de rol'
     },
     {
       id: '2',
