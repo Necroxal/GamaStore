@@ -41,6 +41,7 @@
     <button (click)="deleteItem(i)">delete</button>
   </li>
 </ul>
+<!--Renderiza los componentes-->
 <div *ngFor="let product of products">
   <!--$event es un evento que sirve para emitir el valor que nos va a emitir automaticamente del evenEmiiter-->
   <app-product (productClicked) = "clickProduct($event)" [product]= "product"></app-product>
