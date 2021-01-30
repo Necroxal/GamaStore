@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'GamaStore';
   item = ['German', 'Andrea', 'Rosa']
   
+  power = 10;
   products: Product[] = [
     {
       id: '1',
