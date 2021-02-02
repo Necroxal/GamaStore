@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ExponentialPipe } from './exponential.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -13,7 +16,10 @@ import { HighlightDirective } from './highlight.directive';
     AppComponent,
     ProductComponent,
     ExponentialPipe,
-    HighlightDirective
+    HighlightDirective,
+    HomeComponent,
+    ProductsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
