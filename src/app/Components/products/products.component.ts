@@ -57,6 +57,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // tslint:disable-next-line: typedef
   clickProduct(id: number){
     console.log('pooduct');
     console.log(id);

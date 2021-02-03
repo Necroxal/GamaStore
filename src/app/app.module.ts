@@ -9,6 +9,7 @@ import { HighlightDirective } from './highlight.directive';
 import { HomeComponent } from './Components/home/home.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { ContactComponent } from './Components/contact/contact.component';
+import { DemoComponent } from './Components/demo/demo.component';
 
 
 
@@ -21,6 +22,7 @@ import { ContactComponent } from './Components/contact/contact.component';
     HomeComponent,
     ProductsComponent,
     ContactComponent,
+    DemoComponent,
 
   ],
   imports: [
