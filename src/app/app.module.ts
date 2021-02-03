@@ -6,9 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ExponentialPipe } from './exponential.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { HomeComponent } from './home/home.component';
-import { ProductsComponent } from './products/products.component';
-import { ContactComponent } from './contact/contact.component';
+
 
 
 @NgModule({
@@ -17,9 +15,7 @@ import { ContactComponent } from './contact/contact.component';
     ProductComponent,
     ExponentialPipe,
     HighlightDirective,
-    HomeComponent,
-    ProductsComponent,
-    ContactComponent
+
   ],
   imports: [
     BrowserModule,
