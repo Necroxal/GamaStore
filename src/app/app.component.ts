@@ -7,10 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GamaStore';
-  item = ['German', 'Andrea', 'Rosa']
-  
+  item = ['German', 'Andrea', 'Rosa'];
   power = 10;
- 
 
   addItem() {
     this.item.push('nuevo item');
@@ -18,11 +16,4 @@ export class AppComponent {
   deleteItem(index: number) {
     this.item.splice(index, 1);
   }
-
-  clickProduct(id: number){
-    console.log('pooduct');
-    console.log(id);
-  }
-
-
 }
