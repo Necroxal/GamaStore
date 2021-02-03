@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ExponentialPipe } from './exponential.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { HomeComponent } from './Components/home/home.component';
+import { ProductsComponent } from './Components/products/products.component';
+import { ContactComponent } from './Components/contact/contact.component';
 
 
 
@@ -15,6 +18,9 @@ import { HighlightDirective } from './highlight.directive';
     ProductComponent,
     ExponentialPipe,
     HighlightDirective,
+    HomeComponent,
+    ProductsComponent,
+    ContactComponent,
 
   ],
   imports: [
