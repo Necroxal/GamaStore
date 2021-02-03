@@ -6,14 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'GamaStore';
-  item = ['German', 'Andrea', 'Rosa'];
-  power = 10;
 
-  addItem() {
-    this.item.push('nuevo item');
-  }
-  deleteItem(index: number) {
-    this.item.splice(index, 1);
-  }
 }
