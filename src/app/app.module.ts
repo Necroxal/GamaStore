@@ -10,6 +10,9 @@ import { HomeComponent } from './Components/home/home.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { DemoComponent } from './Components/demo/demo.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { BannerComponent } from './Components/banner/banner.component';
 
 
 
@@ -23,6 +26,9 @@ import { DemoComponent } from './Components/demo/demo.component';
     ProductsComponent,
     ContactComponent,
     DemoComponent,
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent,
 
   ],
   imports: [
