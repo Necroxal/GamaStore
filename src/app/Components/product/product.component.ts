@@ -33,8 +33,9 @@ export class ProductComponent implements DoCheck, OnInit, OnDestroy{
   //   console.log(changes);
   // }
 
+  // tslint:disable-next-line: typedef
   ngOnInit() {
-    //Solo se ejecuta una vez y es cuando el componente ya fue puesto en pantalla
+    // Solo se ejecuta una vez y es cuando el componente ya fue puesto en pantalla
     console.log('3 ngOnInit');
   }
   ngDoCheck(){

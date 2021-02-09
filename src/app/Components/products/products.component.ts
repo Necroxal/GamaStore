@@ -11,7 +11,7 @@ export class ProductsComponent implements OnInit {
     {
       id: '1',
       image: 'assets/image/Producto1.png',
-      title: 'Playera',
+      title: 'Dados para D&D',
       price: 400,
       description: 'Dados para juego de rol'
     },
