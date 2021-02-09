@@ -13,6 +13,7 @@ import { DemoComponent } from './Components/demo/demo.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { BannerComponent } from './Components/banner/banner.component';
+import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 
 
 
@@ -29,6 +30,7 @@ import { BannerComponent } from './Components/banner/banner.component';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
+    PageNotFoundComponent,
 
   ],
   imports: [

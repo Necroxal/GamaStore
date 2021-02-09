@@ -6,6 +6,11 @@ import { ContactComponent } from './Components/contact/contact.component';
 import {DemoComponent} from './Components/demo/demo.component';
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/home', //redireccionar a home cuando
+    pathMatch: 'full' // tengamos la url en seco sin ningun path
+  },
+  {
     path: 'home',
     component: HomeComponent
   },
