@@ -4,6 +4,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import {DemoComponent} from './Components/demo/demo.component';
+import {PageNotFoundComponent} from './Components/page-not-found/page-not-found.component';
 const routes: Routes = [
   {
     path: '',
@@ -26,6 +27,10 @@ const routes: Routes = [
     path: 'demo',
     component: DemoComponent
   },
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  }
 ];
 
 @NgModule({
