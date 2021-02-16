@@ -56,6 +56,6 @@ export class ProductsService {
     return this.products;
   }
   getProduct(id: string){
-    return this.products.find(item => id === item.id); //Si el id coindicio con el item id no los devolverá
+    return this.products.find((item) => id === item.id); //Si el id coindicio con el item id no los devolverá
   }
 }
