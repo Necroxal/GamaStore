@@ -4,4 +4,4 @@
 <p>{{product.description | slice:0:50}}</p> <!--Corta el texto en un rango deterinado-->
 <p>{{today | date: 'HH:mm'}}</p>
 <button (click)="addCart()">Agregar al carrito</button>
-
+<a routerLink="/products/{{product.id}}">Ver el detalle</a>
