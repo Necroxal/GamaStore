@@ -6,28 +6,37 @@ import { ContactComponent } from './Components/contact/contact.component';
 import {DemoComponent} from './Components/demo/demo.component';
 import {PageNotFoundComponent} from './Components/page-not-found/page-not-found.component';
 import {ProductDetailComponent} from './Components/product-detail/product-detail.component';
+import {LayoutComponent} from './Components/layout/layout.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home', //redireccionar a home cuando
-    pathMatch: 'full' // tengamos la url en seco sin ningun path
+    component: LayoutComponent,
+    
+    children: [
+      {
+        path: '',
+        redirectTo: '/home', //redireccionar a home cuando
+        pathMatch: 'full', // tengamos la url en seco sin ningun path
+      },
+      {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: 'products',
+        component: ProductsComponent
+      },
+      {
+        path: 'products/:id',
+        component: ProductDetailComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
+      },
+    ]
   },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'products',
-    component: ProductsComponent
-  },
-  {
-    path: 'products/:id',
-    component: ProductDetailComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
-  },
+  
   {
     path: 'demo',
     component: DemoComponent
