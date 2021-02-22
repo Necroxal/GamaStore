@@ -11,7 +11,7 @@ import { PageNotFoundComponent } from './Components/page-not-found/page-not-foun
 import { ProductDetailComponent } from './Components/product-detail/product-detail.component';
 import { LayoutComponent } from './Components/layout/layout.component';
 import {SharedModule} from './Components/shared/shared.module';
-
+import {CoreModule} from './Components/core/core.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import {SharedModule} from './Components/shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
