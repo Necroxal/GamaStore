@@ -6,6 +6,7 @@ import {DemoComponent} from './Components/demo/demo.component';
 import {PageNotFoundComponent} from './Components/page-not-found/page-not-found.component';
 import {ProductDetailComponent} from './Components/product-detail/product-detail.component';
 import {LayoutComponent} from './Components/layout/layout.component';
+import {AdminGuard}  from './admin.guard';
 const routes: Routes = [
   {
     path: '',
@@ -23,6 +24,7 @@ const routes: Routes = [
       },
       {
         path: 'products',
+        canActivate: [AdminGuard],
         component: ProductsComponent
       },
       {
@@ -31,6 +33,7 @@ const routes: Routes = [
       },
       {
         path: 'contact',
+        canActivate: [AdminGuard],
         component: ContactComponent
       },
     ]
