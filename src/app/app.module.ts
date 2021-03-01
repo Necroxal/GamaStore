@@ -11,10 +11,11 @@ import { ProductDetailComponent } from './Components/product-detail/product-deta
 import { LayoutComponent } from './Components/layout/layout.component';
 import {SharedModule} from './Components/shared/shared.module';
 import {CoreModule} from './Components/core/core.module';
-
+import {ProductComponent}  from './Components/product/components/product/product.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ProductComponent,
     ProductsComponent,
     ContactComponent,
     DemoComponent,

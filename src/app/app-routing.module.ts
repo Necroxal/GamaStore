@@ -24,7 +24,6 @@ const routes: Routes = [
       },
       {
         path: 'products',
-        canActivate: [AdminGuard],
         component: ProductsComponent
       },
       {
@@ -33,7 +32,6 @@ const routes: Routes = [
       },
       {
         path: 'contact',
-        canActivate: [AdminGuard],
         component: ContactComponent
       },
     ]
