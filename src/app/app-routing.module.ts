@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { LayoutComponent } from './Components/layout/layout.component';
-import {ContactComponent} from './Components/contact/contact.component';
 import {DemoComponent} from './Components/demo/demo.component';
 import {PageNotFoundComponent} from './Components/page-not-found/page-not-found.component';
 import { AdminGuard } from './admin.guard';
@@ -27,7 +26,7 @@ const routes: Routes = [
       },
       {
         path: 'contact',
-        component: ContactComponent
+        loadChildren: () => import('./Components/contact/contact.module').then(m => m.ContactModule)
       },
     ]
   },
