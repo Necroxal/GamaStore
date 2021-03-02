@@ -1,12 +1,11 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-import { ProductsComponent } from './Components/product/components/products/products.component';
-import { ContactComponent } from './Components/contact/contact.component';
+
+import { LayoutComponent } from './Components/layout/layout.component';
+import {ContactComponent} from './Components/contact/contact.component';
 import {DemoComponent} from './Components/demo/demo.component';
 import {PageNotFoundComponent} from './Components/page-not-found/page-not-found.component';
-import {ProductDetailComponent} from './Components/product/components/product-detail/product-detail.component';
-import {LayoutComponent} from './Components/layout/layout.component';
-import {AdminGuard}  from './admin.guard';
+import { AdminGuard } from './admin.guard';
 const routes: Routes = [
   {
     path: '',
@@ -25,10 +24,6 @@ const routes: Routes = [
       {
         path: 'products',
         loadChildren: () => import('./Components/product/product.module').then(m => m.ProductModule)
-      },
-      {
-        path: 'products/:id',
-        component: ProductDetailComponent
       },
       {
         path: 'contact',
