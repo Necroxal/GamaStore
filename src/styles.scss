@@ -10,12 +10,12 @@
     grid-gap: 50px 20px;
 }
 .container {
-    width: 90%;
+    width: 100%;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
-}
+  }
 
 @media (min-width: 576px){
     .product-grid{
@@ -23,12 +23,10 @@
         grid-template-columns: repeat(3,1fr);
     }
     .container {
-        width: 90%;
-        padding-right: 0px;
-        padding-left: 0px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+        max-width: 1110px;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
